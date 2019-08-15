@@ -1,19 +1,18 @@
-let h1 = document.getElementById("title");
-
-h1.innerText = "Javascript done be taking over, son!";
-
 let button = document.createElement("button");
 
-button.innerText = "Don't Click Me";
+let btn = document.getElementById("button");
 
-h1.append(button);
+const slideMenu = document.getElementById("slide-menu");
+
+button.innerText = "Click for Menu";
+
+btn.append(button);
 
 button.addEventListener("click", function() {
-  h1.classList.toggle("active");
-  if (h1.classList == "title active") {
-    this.innerText = "Clicked";
-    h1.innerText = "You Clicked The Button!!";
+  slideMenu.classList.toggle("active");
+  if (slideMenu.classList == "slide-menu active") {
+    this.style.backgroundColor = "yellow";
   } else {
-    this.innerText = "Click Me Again!";
+    this.style.backgroundColor = "";
   }
 });

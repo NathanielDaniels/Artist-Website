@@ -1,7 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap");
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  background: radial-gradient(540px at 50% 50%, #2b3760 0%, #0b1023 100%);
 }
 
 .title {
@@ -19,4 +27,43 @@ button {
   font-size: 24px;
   padding: 5px 10px;
   cursor: pointer;
+}
+
+.slide-menu {
+  height: 130vh;
+  width: 350px;
+  // background: hsl(207, 44%, 49%);
+  background: #eae5e5;
+  transform: rotate(6.4deg);
+  position: absolute;
+  top: -25px;
+  right: -450px;
+  border-left: 2px solid rgba(0, 0, 0, 0.96);
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.25);
+  transition: right 0.3s ease-in-out;
+  &.active {
+    right: -40px;
+  }
+  .social-media {
+    text-align: center;
+    margin: 60px 0;
+    font-size: 1.2rem;
+    transform: rotate(-6.4deg);
+    h2 {
+      position: relative;
+      left: -20px;
+      color: hsl(0, 0%, 24%);
+      filter: drop-shadow(1px 1px hsl(207, 44%, 40%));
+    }
+    ul {
+      display: flex;
+      margin-left: 35px;
+      list-style: none;
+      li {
+        margin: 20px 30px;
+        filter: drop-shadow(1px 1px hsl(207, 44%, 40%));
+        cursor: pointer;
+      }
+    }
+  }
 }
