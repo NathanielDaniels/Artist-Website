@@ -12,21 +12,28 @@ body {
   background: radial-gradient(540px at 50% 50%, #2b3760 0%, #0b1023 100%);
 }
 
-.title {
-  text-align: center;
+.title-menu {
+  display: grid;
+  grid-template-columns: 1fr 600px 1fr;
   margin: 20px 0;
-  &.active {
-    color: red;
-    font-size: 3rem;
+  .title {
+    grid-column: 1 / 2;
+    text-align: center;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1rem;
+    &.active {
+      color: red;
+      // font-size: 3rem;
+    }
   }
-}
-
-button {
-  display: block;
-  margin: 20px auto;
-  font-size: 24px;
-  padding: 5px 10px;
-  cursor: pointer;
+  .menu-button {
+    grid-column: 3 / 4;
+    position: absolute;
+    right: 400px;
+    color: #fff;
+    cursor: pointer;
+  }
 }
 
 .slide-menu {
