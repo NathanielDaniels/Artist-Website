@@ -1,0 +1,22 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+  &.active {
+    color: red;
+    font-size: 3rem;
+  }
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  font-size: 24px;
+  padding: 5px 10px;
+  cursor: pointer;
+}

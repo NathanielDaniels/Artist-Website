@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.title.active {
+  color: red;
+  font-size: 3rem;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  font-size: 24px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
