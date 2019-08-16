@@ -41,6 +41,7 @@ body {
 }
 
 .slide-menu {
+  z-index: 100;
   height: 130vh;
   width: 350px;
   // background: hsl(207, 44%, 49%);
@@ -103,18 +104,21 @@ body {
     justify-content: center;
     position: relative;
     top: 25px;
-    &:hover img {
-      top: 0;
-    }
-    img {
-      width: 130px;
-      position: relative;
-    }
-    .model-left {
-      top: -10px;
-    }
-    .model-right {
-      top: 10px;
+    .images {
+      img {
+        width: 150px;
+        position: relative;
+        transition: top 0.3s ease-out;
+      }
+      .model-left {
+        top: -10px;
+      }
+      .model-right {
+        top: 10px;
+      }
+      &:hover img {
+        top: 0;
+      }
     }
   }
 }
