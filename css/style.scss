@@ -17,20 +17,17 @@ body {
 }
 
 .title-menu {
+  width: 100%;
+  position: absolute;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
-  margin: 30px 0;
+  margin-top: 30px;
   .title {
     grid-column-start: 1;
-    // grid-column: 1;
     text-align: center;
     color: #fff;
     font-weight: 400;
     font-size: 1rem;
-    &.active {
-      color: red;
-      // font-size: 3rem;
-    }
   }
   .menu-button {
     grid-column-start: 3;
@@ -82,12 +79,21 @@ body {
 }
 
 .main-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  // height: 300px;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
   // width: 100%;
   .user-info {
-    position: absolute;
-    top: 50%;
-    left: 15%;
-    transform: translate(0, -50%);
+    cursor: pointer;
+    grid-column-start: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+
     .user-name {
       color: #fff;
       font-size: 3rem;
@@ -100,16 +106,15 @@ body {
     }
   }
   .user-img {
+    grid-column-start: 2;
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 25px;
     &:hover img {
       top: 0;
     }
     img {
       z-index: 2;
-      width: 150px;
+      width: 120px;
       position: relative;
       transition: top 0.3s ease-out;
     }
@@ -120,48 +125,35 @@ body {
       top: 10px;
     }
   }
-}
+  .page-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75px;
+    height: 200px;
+    background: transparent;
+    top: 50%;
+    right: 120px;
+    transform: translate(0, -50%);
+    color: #fff;
 
-// =============================================================
-//! better hover for main image but having gap issues
-// .main-section {
-//   // width: 100%;
-//   .user-info {
-//     position: absolute;
-//     top: 50%;
-//     left: 15%;
-//     transform: translate(0, -50%);
-//     .user-name {
-//       color: #fff;
-//       font-size: 3rem;
-//     }
-//     .user-prof {
-//       color: #fff;
-//       display: flex;
-//       justify-content: flex-end;
-//       font-size: 1.5rem;
-//     }
-//   }
-//   .user-img {
-//     display: flex;
-//     justify-content: center;
-//     position: relative;
-//     top: 25px;
-//     .images {
-//       img {
-//         width: 150px;
-//         position: relative;
-//         transition: top 0.3s ease-out;
-//       }
-//       .model-left {
-//         top: -10px;
-//       }
-//       .model-right {
-//         top: 10px;
-//       }
-//       &:hover img {
-//         top: 0;
-//       }
-//     }
-//   }
-// }
+    .page {
+      margin: 20px 0;
+      display: flex;
+      justify-content: center;
+
+      .button {
+        cursor: pointer;
+        margin-left: 15px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff;
+        &:hover {
+          background: grey;
+        }
+      }
+    }
+  }
+}
