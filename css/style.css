@@ -97,7 +97,7 @@ body {
 .main-section .user-info {
   position: absolute;
   top: 50%;
-  left: 10%;
+  left: 15%;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
 }
@@ -129,22 +129,23 @@ body {
   top: 25px;
 }
 
-.main-section .user-img .images img {
+.main-section .user-img:hover img {
+  top: 0;
+}
+
+.main-section .user-img img {
+  z-index: 2;
   width: 150px;
   position: relative;
   -webkit-transition: top 0.3s ease-out;
   transition: top 0.3s ease-out;
 }
 
-.main-section .user-img .images .model-left {
+.main-section .user-img .model-left {
   top: -10px;
 }
 
-.main-section .user-img .images .model-right {
+.main-section .user-img .model-right {
   top: 10px;
-}
-
-.main-section .user-img .images:hover img {
-  top: 0;
 }
 /*# sourceMappingURL=style.css.map */

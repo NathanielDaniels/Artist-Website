@@ -86,7 +86,7 @@ body {
   .user-info {
     position: absolute;
     top: 50%;
-    left: 10%;
+    left: 15%;
     transform: translate(0, -50%);
     .user-name {
       color: #fff;
@@ -104,21 +104,64 @@ body {
     justify-content: center;
     position: relative;
     top: 25px;
-    .images {
-      img {
-        width: 150px;
-        position: relative;
-        transition: top 0.3s ease-out;
-      }
-      .model-left {
-        top: -10px;
-      }
-      .model-right {
-        top: 10px;
-      }
-      &:hover img {
-        top: 0;
-      }
+    &:hover img {
+      top: 0;
+    }
+    img {
+      z-index: 2;
+      width: 150px;
+      position: relative;
+      transition: top 0.3s ease-out;
+    }
+    .model-left {
+      top: -10px;
+    }
+    .model-right {
+      top: 10px;
     }
   }
 }
+
+// =============================================================
+//! better hover for main image but having gap issues
+// .main-section {
+//   // width: 100%;
+//   .user-info {
+//     position: absolute;
+//     top: 50%;
+//     left: 15%;
+//     transform: translate(0, -50%);
+//     .user-name {
+//       color: #fff;
+//       font-size: 3rem;
+//     }
+//     .user-prof {
+//       color: #fff;
+//       display: flex;
+//       justify-content: flex-end;
+//       font-size: 1.5rem;
+//     }
+//   }
+//   .user-img {
+//     display: flex;
+//     justify-content: center;
+//     position: relative;
+//     top: 25px;
+//     .images {
+//       img {
+//         width: 150px;
+//         position: relative;
+//         transition: top 0.3s ease-out;
+//       }
+//       .model-left {
+//         top: -10px;
+//       }
+//       .model-right {
+//         top: 10px;
+//       }
+//       &:hover img {
+//         top: 0;
+//       }
+//     }
+//   }
+// }
