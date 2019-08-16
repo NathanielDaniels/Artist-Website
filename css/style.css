@@ -7,23 +7,26 @@
 }
 
 body {
+  height: 100vh;
   font-family: "Poppins", sans-serif;
   overflow: hidden;
   background: radial-gradient(540px at 50% 50%, #2b3760 0%, #0b1023 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .title-menu {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 600px 1fr;
-      grid-template-columns: 1fr 600px 1fr;
-  margin: 20px 0;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  margin: 30px 0;
 }
 
 .title-menu .title {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1 / 2;
+      grid-column-start: 1;
   text-align: center;
   color: #fff;
   font-weight: 400;
@@ -36,10 +39,8 @@ body {
 
 .title-menu .menu-button {
   -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3 / 4;
-  position: absolute;
-  right: 400px;
+      grid-column-start: 3;
+  text-align: center;
   color: #fff;
   cursor: pointer;
 }
@@ -73,11 +74,10 @@ body {
 }
 
 .slide-menu .social-media h2 {
+  font-weight: 400;
   position: relative;
   left: -20px;
   color: #3d3d3d;
-  -webkit-filter: drop-shadow(1px 1px #396a93);
-          filter: drop-shadow(1px 1px #396a93);
 }
 
 .slide-menu .social-media ul {
@@ -90,8 +90,58 @@ body {
 
 .slide-menu .social-media ul li {
   margin: 20px 30px;
-  -webkit-filter: drop-shadow(1px 1px #396a93);
-          filter: drop-shadow(1px 1px #396a93);
   cursor: pointer;
+}
+
+.main-section .user-info {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+
+.main-section .user-info .user-name {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.main-section .user-info .user-prof {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1.5rem;
+}
+
+.main-section .user-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 25px;
+}
+
+.main-section .user-img:hover img {
+  top: 0;
+}
+
+.main-section .user-img img {
+  width: 130px;
+  position: relative;
+}
+
+.main-section .user-img .model-left {
+  top: -10px;
+}
+
+.main-section .user-img .model-right {
+  top: 10px;
 }
 /*# sourceMappingURL=style.css.map */
