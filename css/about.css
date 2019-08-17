@@ -9,6 +9,7 @@
 body {
   background: #e5e5e5;
   margin: 0 auto;
+  width: 1400px;
   height: 100vh;
   font-family: "Poppins", sans-serif;
 }
@@ -20,8 +21,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 2px solid gray;
-  -webkit-box-shadow: -5px 0px 5px gray;
-          box-shadow: -5px 0px 5px gray;
+  -webkit-box-shadow: 0px 2px 8px gray;
+          box-shadow: 0px 2px 8px gray;
 }
 
 .main-img .img-info {
@@ -46,23 +47,26 @@ body {
 }
 
 .main-img .img-info .user-info {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .main-img .img-info .user-prof {
   margin-bottom: 40px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 
 .main-info {
+  -webkit-box-shadow: 0px 2px 8px gray;
+          box-shadow: 0px 2px 8px gray;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  grid-gap: 20px;
+  grid-gap: 20px 10px;
+  padding: 60px 40px;
 }
 
 .main-info .my-story {
@@ -71,19 +75,57 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / span 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-info .my-story .left-side {
+  -ms-grid-row: 1;
+  grid-row: 1;
   -ms-grid-column: 1;
-  grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
 }
 
-.main-info .my-story .right-side {
-  -ms-grid-column: 2;
-  grid-column: 2;
+.main-info .my-story .left-side .story-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.main-info .my-story .left-side .story-info {
+  margin: 20px;
+  font-size: 1.2rem;
+}
+
+.main-info .right-side {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 3;
+  grid-column: 3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-info .right-side .story-img {
   background: url(/img/photo-profile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 400px;
+  width: 300px;
 }
 
 .main-info .my-projects {
