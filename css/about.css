@@ -86,7 +86,7 @@ body {
           align-items: center;
 }
 
-.main-info .my-story .left-side {
+.main-info .my-story .story-left-side {
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 1;
@@ -94,17 +94,17 @@ body {
   grid-column: 1 / 2;
 }
 
-.main-info .my-story .left-side .story-title {
+.main-info .my-story .story-left-side .story-title {
   font-size: 1.5rem;
   font-weight: 500;
 }
 
-.main-info .my-story .left-side .story-info {
+.main-info .my-story .story-left-side .story-info {
   margin: 20px;
   font-size: 1.2rem;
 }
 
-.main-info .right-side {
+.main-info .story-right-side {
   -ms-grid-row: 1;
   grid-row: 1;
   -ms-grid-column: 3;
@@ -120,7 +120,7 @@ body {
           align-items: center;
 }
 
-.main-info .right-side .story-img {
+.main-info .story-right-side .story-img {
   background: url(/img/photo-profile.jpg);
   background-repeat: no-repeat;
   background-size: cover;

@@ -56,7 +56,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    .left-side {
+    .story-left-side {
       grid-row: 1;
       grid-column: 1 / 2;
       .story-title {
@@ -69,7 +69,7 @@ body {
       }
     }
   }
-  .right-side {
+  .story-right-side {
     grid-row: 1;
     grid-column: 3;
     display: flex;
