@@ -9,7 +9,7 @@
 body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
+  // overflow: hidden;
 }
 .main-container {
   background: radial-gradient(540px at 50% 50%, #2b3760 0%, #0b1023 100%);
@@ -59,7 +59,7 @@ body {
 
   .slide-menu {
     z-index: 100;
-    height: 130vh;
+    height: 110vh;
     width: 400px;
     background: #eae5e5;
     transform: rotate(6.4deg);
@@ -82,7 +82,6 @@ body {
         position: relative;
         left: -20px;
         color: hsl(0, 0%, 24%);
-        // filter: drop-shadow(1px 1px hsl(207, 44%, 40%));
       }
       ul {
         display: flex;

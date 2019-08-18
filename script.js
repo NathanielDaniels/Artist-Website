@@ -3,6 +3,7 @@
 // let btn = document.getElementById("button");
 
 const slideMenu = document.getElementById("slide-menu");
+const button = document.getElementById("button");
 
 button.addEventListener("click", function() {
   slideMenu.classList.toggle("active");
