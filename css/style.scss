@@ -9,144 +9,165 @@
 body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
+  // overflow: hidden;
+}
+.main-container {
   background: radial-gradient(540px at 50% 50%, #2b3760 0%, #0b1023 100%);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.title-menu {
-  width: 100%;
-  position: absolute;
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  margin-top: 30px;
-  .title {
-    grid-column-start: 1;
-    text-align: center;
-    color: #fff;
-    font-weight: 400;
-    font-size: 1rem;
-  }
-  .menu-button {
-    grid-column-start: 3;
-    text-align: center;
-    color: #fff;
-    cursor: pointer;
-  }
+.second-container {
+  background: radial-gradient(540px at 50% 50%, #4e3022 0%, #161616 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
-.slide-menu {
-  z-index: 100;
-  height: 130vh;
-  width: 400px;
-  background: #eae5e5;
-  transform: rotate(6.4deg);
-  position: absolute;
-  top: -25px;
-  right: -450px;
-  border-left: 2px solid rgba(0, 0, 0, 0.96);
-  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.25);
-  transition: right 0.3s ease-in-out;
-  &.active {
-    right: -40px;
-  }
-  .social-media {
-    text-align: center;
-    margin: 80px 0 0;
-    font-size: 1.2rem;
-    transform: rotate(-6.4deg);
-    h2 {
+.third-container {
+  background: radial-gradient(540px at 50% 50%, #3a0606 0%, #161616 100%);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-container,
+.second-container,
+.third-container {
+  height: 100vh;
+  .title-menu {
+    width: 100%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin-top: 30px;
+    .title {
+      grid-column-start: 1;
+      text-align: center;
+      color: #fff;
       font-weight: 400;
-      position: relative;
-      left: -20px;
-      color: hsl(0, 0%, 24%);
-      // filter: drop-shadow(1px 1px hsl(207, 44%, 40%));
+      font-size: 1rem;
     }
-    ul {
-      display: flex;
-      margin-left: 30px;
-      list-style: none;
-      li {
-        margin: 20px 40px;
-        filter: drop-shadow(1px 1px hsl(0, 0%, 75%));
-        cursor: pointer;
-      }
+    .menu-button {
+      grid-column-start: 3;
+      text-align: center;
+      color: #fff;
+      cursor: pointer;
     }
   }
-}
 
-.main-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  // height: 300px;
-  position: relative;
-  top: 50%;
-  transform: translate(0, -50%);
-  // width: 100%;
-  .user-info {
-    cursor: pointer;
-    grid-column-start: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-    a {
-      text-decoration: none;
-      .user-name {
-        color: #fff;
-        font-size: 3rem;
+  .slide-menu {
+    z-index: 100;
+    height: 130vh;
+    width: 400px;
+    background: #eae5e5;
+    transform: rotate(6.4deg);
+    position: absolute;
+    top: -25px;
+    right: -450px;
+    border-left: 2px solid rgba(0, 0, 0, 0.96);
+    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.25);
+    transition: right 0.3s ease-in-out;
+    &.active {
+      right: -40px;
+    }
+    .social-media {
+      text-align: center;
+      margin: 80px 0 0;
+      font-size: 1.2rem;
+      transform: rotate(-6.4deg);
+      h2 {
+        font-weight: 400;
+        position: relative;
+        left: -20px;
+        color: hsl(0, 0%, 24%);
+        // filter: drop-shadow(1px 1px hsl(207, 44%, 40%));
       }
-      .user-prof {
-        color: #fff;
+      ul {
         display: flex;
-        justify-content: flex-end;
-        font-size: 1.5rem;
+        margin-left: 30px;
+        list-style: none;
+        li {
+          margin: 20px 40px;
+          filter: drop-shadow(1px 1px hsl(0, 0%, 75%));
+          cursor: pointer;
+        }
       }
     }
   }
-  .user-img {
-    grid-column-start: 2;
-    display: flex;
-    justify-content: center;
-    &:hover img {
-      top: 0;
+
+  .main-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    // height: 300px;
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    // width: 100%;
+    .user-info {
+      cursor: pointer;
+      grid-column-start: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      a {
+        text-decoration: none;
+        .user-name {
+          color: #fff;
+          font-size: 3rem;
+        }
+        .user-prof {
+          color: #fff;
+          display: flex;
+          justify-content: flex-end;
+          font-size: 1.5rem;
+        }
+      }
     }
-    img {
-      z-index: 2;
-      width: 150px;
-      position: relative;
-      transition: top 0.3s ease-out;
-    }
-    .model-left {
-      top: -10px;
-    }
-    .model-right {
-      top: 10px;
-    }
-  }
-  .page-menu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: transparent;
-    color: #fff;
-    .page {
-      margin: 20px 0;
+    .user-img {
+      grid-column-start: 2;
       display: flex;
       justify-content: center;
-      .button {
-        cursor: pointer;
-        margin-left: 15px;
-        width: 20px;
-        height: 20px;
-        border-radius: 50%;
-        background: #fff;
-        transition: background 0.3s ease-in-out;
-        &:hover {
-          background: grey;
+      &:hover img {
+        top: 0;
+      }
+      img {
+        z-index: 2;
+        width: 150px;
+        position: relative;
+        transition: top 0.3s ease-out;
+      }
+      .model-left {
+        top: -10px;
+      }
+      .model-right {
+        top: 10px;
+      }
+    }
+    .page-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+      color: #fff;
+      .page {
+        margin: 20px 0;
+        display: flex;
+        justify-content: center;
+        .button {
+          cursor: pointer;
+          margin-left: 15px;
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          background: #fff;
+          transition: background 0.3s ease-in-out;
+          &:hover {
+            background: grey;
+          }
         }
       }
     }

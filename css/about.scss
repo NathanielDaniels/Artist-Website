@@ -47,7 +47,7 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 20px 10px;
+  grid-gap: 20px;
   padding: 60px 40px;
   .my-story {
     // grid-template-columns: repeat(3, 1fr);
@@ -86,8 +86,26 @@ body {
   .my-projects {
     grid-row: 2;
     grid-column: 3 / span 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .projects-left-side {
       grid-column: 1 / span 2;
+      .project-img {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+      }
+    }
+    .projects-right-side {
+      .project-title {
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+      .project-info {
+        margin: 20px;
+        font-size: 1.1rem;
+      }
     }
   }
 }

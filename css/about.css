@@ -65,7 +65,7 @@ body {
       grid-template-columns: repeat(4, 1fr);
   -ms-grid-rows: (1fr)[2];
       grid-template-rows: repeat(2, 1fr);
-  grid-gap: 20px 10px;
+  grid-gap: 20px;
   padding: 60px 40px;
 }
 
@@ -134,11 +134,39 @@ body {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-column: 3 / span 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-info .my-projects .projects-left-side {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / span 2;
+}
+
+.main-info .my-projects .projects-left-side .project-img {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+}
+
+.main-info .my-projects .projects-right-side .project-title {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.main-info .my-projects .projects-right-side .project-info {
+  margin: 20px;
+  font-size: 1.1rem;
 }
 /*# sourceMappingURL=about.css.map */
