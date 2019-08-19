@@ -134,8 +134,10 @@ body {
   background: url(/img/photo-profile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
-  width: 300px;
+  max-height: 400px;
+  min-height: 300px;
+  max-width: 300px;
+  min-width: 200px;
 }
 
 .main-info .my-projects {
@@ -166,18 +168,22 @@ body {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
 }
 
 .main-info .projects-left-side .projects-grid .project-img {
-  width: 180px;
-  height: 180px;
+  max-width: 180px;
+  min-width: 100px;
+  max-height: 180px;
+  min-height: 100px;
 }
 
 .main-info .projects-left-side .projects-grid .project-img img {
-  width: 180px;
-  height: 180px;
+  max-width: 180px;
+  min-width: 100px;
+  max-height: 180px;
+  min-height: 100px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
