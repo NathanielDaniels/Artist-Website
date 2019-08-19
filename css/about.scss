@@ -97,9 +97,11 @@ body {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: repeat(2, 1fr);
       .project-img {
-        height: 150px;
+        width: 180px;
+        height: 180px;
         img {
-          width: 150px;
+          width: 180px;
+          height: 180px;
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
@@ -107,7 +109,7 @@ body {
       }
     }
   }
-  .center {
+  .projects-container {
     grid-row: 2;
     grid-column: 3 / span 2;
     display: flex;
