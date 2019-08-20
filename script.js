@@ -29,3 +29,15 @@ button.addEventListener("click", function() {
 //     });
 //   });
 // });
+
+//========================================
+let c = [1, 2];
+
+function add(array, element) {
+  array = [element];
+  console.log(`new array = ${array}`);
+}
+
+add(c, 4);
+
+console.log(c);
