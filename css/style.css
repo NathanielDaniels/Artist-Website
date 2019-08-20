@@ -54,7 +54,8 @@ body {
   right: -40px;
 }
 
-.slide-menu .social-media {
+.slide-menu .social-media,
+.slide-menu .contact {
   text-align: center;
   margin: 80px 0 0;
   font-size: 1.2rem;
@@ -62,14 +63,16 @@ body {
           transform: rotate(-6.4deg);
 }
 
-.slide-menu .social-media h2 {
+.slide-menu .social-media h2,
+.slide-menu .contact h2 {
   font-weight: 400;
   position: relative;
   left: -20px;
-  color: #3d3d3d;
+  color: #242424;
 }
 
-.slide-menu .social-media ul {
+.slide-menu .social-media ul,
+.slide-menu .contact ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,11 +80,20 @@ body {
   list-style: none;
 }
 
-.slide-menu .social-media ul li {
+.slide-menu .social-media ul li,
+.slide-menu .contact ul li {
   margin: 20px 40px;
   -webkit-filter: drop-shadow(1px 1px #bfbfbf);
           filter: drop-shadow(1px 1px #bfbfbf);
   cursor: pointer;
+}
+
+.slide-menu .social-media .phone-number,
+.slide-menu .social-media .email,
+.slide-menu .contact .phone-number,
+.slide-menu .contact .email {
+  margin: 10px 40px 0 0;
+  color: #3d3d3d;
 }
 
 .main-container,
