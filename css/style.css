@@ -54,6 +54,10 @@ body {
   right: -40px;
 }
 
+.slide-menu.new {
+  right: -40px;
+}
+
 .slide-menu .social-media,
 .slide-menu .contact {
   text-align: center;

@@ -10,6 +10,7 @@ body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
   overflow: hidden;
+  // scroll-behavior: smooth;
 }
 .main-container {
   background: radial-gradient(540px at 50% 50%, #2b3760 0%, #0b1023 100%);
@@ -45,6 +46,9 @@ body {
   box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.25);
   transition: right 0.3s ease-in-out;
   &.active {
+    right: -40px;
+  }
+  &.new {
     right: -40px;
   }
   .social-media,

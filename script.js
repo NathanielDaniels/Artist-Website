@@ -1,7 +1,3 @@
-// let button = document.createElement("button");
-
-// let btn = document.getElementById("button");
-
 const slideMenu = document.getElementById("slide-menu");
 const button = document.getElementById("button");
 const first = document.getElementById("first");
@@ -11,33 +7,18 @@ const third = document.getElementById("third");
 button.addEventListener("click", function() {
   slideMenu.classList.toggle("active");
   first.style = "filter: blur(4px)";
-  second.style = "filter: blur(4px)";
-  third.style = "filter: blur(4px)";
-  // if (slideMenu.classList == "slide-menu active") {
-  //   this.style.backgroundColor = "yellow";
-  // } else {
-  //   this.style.backgroundColor = "";
-  // }
+  // second.style = "filter: blur(4px)";
+  // third.style = "filter: blur(4px)";
 });
 
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//   anchor.addEventListener("click", function(e) {
-//     e.preventDefault();
+// Detect all clicks on the document
+document.addEventListener("click", function(event) {
+  // If user clicks inside the element, do nothing
+  if (event.target.closest(".slide-menu")) return;
 
-//     document.querySelector(this.getAttribute("href")).scrollIntoView({
-//       behavior: "smooth"
-//     });
-//   });
-// });
+  // If user clicks outside the element, hide it!
+  slideMenu.classList.add(".new");
+  // first.style = "filter: blur(0px)";
+});
 
 //========================================
-let c = [1, 2];
-
-function add(array, element) {
-  array = [element];
-  console.log(`new array = ${array}`);
-}
-
-add(c, 4);
-
-console.log(c);
