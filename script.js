@@ -22,3 +22,9 @@ document.addEventListener("click", function(event) {
 });
 
 //========================================
+
+const colors = ["red", "yellow", "blue", "green"];
+
+for (let i of colors) {
+  console;
+}
