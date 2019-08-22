@@ -3,6 +3,7 @@ const button = document.getElementById("button");
 const first = document.getElementById("first");
 const second = document.getElementById("second");
 const third = document.getElementById("third");
+const menuClose = document.getElementById("close-btn");
 
 button.addEventListener("click", function() {
   slideMenu.classList.toggle("active");
@@ -11,15 +12,23 @@ button.addEventListener("click", function() {
   // third.style = "filter: blur(4px)";
 });
 
-// Detect all clicks on the document
-document.addEventListener("click", function(event) {
-  // If user clicks inside the element, do nothing
-  if (event.target.closest(".slide-menu")) return;
-
-  // If user clicks outside the element, hide it!
-  slideMenu.classList.add(".new");
-  // first.style = "filter: blur(0px)";
+menuClose.addEventListener("click", function() {
+  slideMenu.classList.toggle("active");
+  first.style = "filter: blur(0)";
+  // second.style = "filter: blur(0)";
+  // third.style = "filter: blur(0)";
 });
+
+//*! Trying to get document click working
+// // Detect all clicks on the document
+// document.addEventListener("click", function(event) {
+//   // If user clicks inside the element, do nothing
+//   if (event.target.closest(".slide-menu")) return;
+
+//   // If user clicks outside the element, hide it!
+//   slideMenu.classList.add(".new");
+//   // first.style = "filter: blur(0px)";
+// });
 
 //========================================
 
