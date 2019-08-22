@@ -19,7 +19,7 @@ menuClose.addEventListener("click", function() {
   // third.style = "filter: blur(0)";
 });
 
-//*! Trying to get document click working
+//*! target document
 // // Detect all clicks on the document
 // document.addEventListener("click", function(event) {
 //   // If user clicks inside the element, do nothing
