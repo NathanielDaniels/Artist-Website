@@ -59,6 +59,7 @@ body {
 }
 
 .slide-menu button {
+  opacity: 0;
   position: relative;
   top: 50px;
   left: 15px;
@@ -73,6 +74,10 @@ body {
 
 .slide-menu button.close-menu {
   font-size: 1.2rem;
+}
+
+.slide-menu button:hover button {
+  opacity: 100%;
 }
 
 .slide-menu .social-media,
