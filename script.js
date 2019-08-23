@@ -35,5 +35,5 @@ menuClose.addEventListener("click", function() {
 const colors = ["red", "yellow", "blue", "green"];
 
 for (let i of colors) {
-  console;
+  console.log(i);
 }
