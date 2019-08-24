@@ -1,3 +1,5 @@
+import { TweenLite } from "gsap";
+
 const slideMenu = document.getElementById("slide-menu");
 const button = document.getElementById("button");
 const first = document.getElementById("first");
@@ -17,7 +19,16 @@ menuClose.addEventListener("click", function() {
   first.style = "filter: blur(0)";
 });
 
-//*! target document
+//?===============================
+//* GSAP Animations
+const $modelLeft = document.getElementById("modelLeft");
+const $modelRight = document.getElementById("modelRight");
+
+TweenLite.to($modelLeft, 2, { y: 0, opacity: 0.5 });
+
+//?===============================
+
+//!target document
 // // Detect all clicks on the document
 // document.addEventListener("click", function(event) {
 //   // If user clicks inside the element, do nothing
