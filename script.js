@@ -15,8 +15,6 @@ button.addEventListener("click", function() {
 menuClose.addEventListener("click", function() {
   slideMenu.classList.toggle("active");
   first.style = "filter: blur(0)";
-  // second.style = "filter: blur(0)";
-  // third.style = "filter: blur(0)";
 });
 
 //*! target document
