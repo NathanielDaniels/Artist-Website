@@ -1,5 +1,3 @@
-import { TweenLite } from "gsap";
-
 const slideMenu = document.getElementById("slide-menu");
 const button = document.getElementById("button");
 const first = document.getElementById("first");
@@ -23,12 +21,17 @@ menuClose.addEventListener("click", function() {
 //* GSAP Animations
 const $modelLeft = document.getElementById("modelLeft");
 const $modelRight = document.getElementById("modelRight");
+const $pageMenu = document.getElementById("pageMenu");
+const $userInfo = document.getElementById("userInfo");
 
-TweenLite.to($modelLeft, 2, { y: 0, opacity: 0.5 });
+TweenLite.from($modelLeft, 1.5, { y: 800, opacity: 0 });
+TweenLite.from($modelRight, 1.5, { y: -800, opacity: 0 });
+TweenLite.from($userInfo, 1, { delay: 1.8, x: 200, opacity: 0 });
+TweenLite.from($pageMenu, 1, { delay: 1.8, x: -200, opacity: 0 });
 
 //?===============================
 
-//!target document
+//*! target document
 // // Detect all clicks on the document
 // document.addEventListener("click", function(event) {
 //   // If user clicks inside the element, do nothing
@@ -41,8 +44,8 @@ TweenLite.to($modelLeft, 2, { y: 0, opacity: 0.5 });
 
 //========================================
 
-const colors = ["red", "yellow", "blue", "green"];
+// const colors = ["red", "yellow", "blue", "green"];
 
-for (let i of colors) {
-  console.log(i);
-}
+// for (let i of colors) {
+//   console.log(i);
+// }

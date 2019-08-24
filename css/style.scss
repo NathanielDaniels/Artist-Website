@@ -9,7 +9,7 @@
 body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
-  // overflow: hidden;
+  overflow: hidden;
   // scroll-behavior: smooth;
 }
 .main-container {
@@ -178,7 +178,8 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
+      margin-left: 100px;
       background: transparent;
       color: #fff;
       .page {
