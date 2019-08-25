@@ -7,9 +7,10 @@
 }
 
 body {
+  cursor: default;
   height: 100vh;
   font-family: "Poppins", sans-serif;
-  // overflow: hidden;
+  overflow: hidden;
   background: #0b1023;
   // scroll-behavior: smooth;
 }
@@ -180,8 +181,7 @@ body {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: flex-start;
-      margin-left: 100px;
+      align-items: center;
       background: transparent;
       color: #fff;
       .page {
@@ -196,9 +196,13 @@ body {
           border-radius: 50%;
           background: #fff;
           transition: background 0.3s ease-in-out;
+
           &:hover {
-            background: grey;
+            background: rgb(53, 143, 170);
           }
+        }
+        .button1 {
+          background: #666;
         }
       }
     }

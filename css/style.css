@@ -7,8 +7,10 @@
 }
 
 body {
+  cursor: default;
   height: 100vh;
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
   background: #0b1023;
 }
 
@@ -285,10 +287,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-left: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: transparent;
   color: #fff;
 }
@@ -321,6 +322,12 @@ body {
 .main-container .main-section .page-menu .page .button:hover,
 .second-container .main-section .page-menu .page .button:hover,
 .third-container .main-section .page-menu .page .button:hover {
-  background: grey;
+  background: #358faa;
+}
+
+.main-container .main-section .page-menu .page .button1,
+.second-container .main-section .page-menu .page .button1,
+.third-container .main-section .page-menu .page .button1 {
+  background: #666;
 }
 /*# sourceMappingURL=style.css.map */
