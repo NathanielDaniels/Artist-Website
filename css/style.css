@@ -9,10 +9,11 @@
 body {
   height: 100vh;
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
+  background: #0b1023;
 }
 
-.main-container {
+.bg {
+  height: 100vh;
   background: radial-gradient(540px at 50% 50%, #2b3760 0%, #0b1023 100%);
   background-repeat: no-repeat;
   background-position: center;
