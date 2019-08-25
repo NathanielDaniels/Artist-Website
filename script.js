@@ -24,10 +24,10 @@ const $modelRight = document.getElementById("modelRight");
 const $pageMenu = document.getElementById("pageMenu");
 const $userInfo = document.getElementById("userInfo");
 
-TweenLite.from($modelLeft, 1.5, { y: 800, opacity: 0 });
-TweenLite.from($modelRight, 1.5, { y: -800, opacity: 0 });
-TweenLite.from($userInfo, 1, { delay: 1.8, x: 200, opacity: 0 });
-TweenLite.from($pageMenu, 1, { delay: 1.8, x: -200, opacity: 0 });
+TweenLite.from($modelLeft, 1.2, { y: 900, opacity: 0 });
+TweenLite.from($modelRight, 1.2, { y: -900, opacity: 0 });
+TweenLite.from($userInfo, 1, { delay: 1.4, x: 300, opacity: 0 });
+TweenLite.from($pageMenu, 1, { delay: 1.4, x: -300, opacity: 0 });
 
 //?===============================
 
