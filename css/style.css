@@ -145,9 +145,9 @@ body {
   margin-top: 30px;
 }
 
-.main-container .title-menu .title,
-.second-container .title-menu .title,
-.third-container .title-menu .title {
+.main-container .title-menu .main-title,
+.second-container .title-menu .main-title,
+.third-container .title-menu .main-title {
   -ms-grid-column: 1;
       grid-column-start: 1;
   text-align: center;

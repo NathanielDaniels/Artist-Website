@@ -1,4 +1,4 @@
-const slideMenu = document.getElementById("slide-menu");
+const slideMenu = document.getElementById("slideMenu");
 const button = document.getElementById("button");
 const first = document.getElementById("first");
 const second = document.getElementById("second");
@@ -8,13 +8,15 @@ const menuClose = document.getElementById("close-btn");
 button.addEventListener("click", function() {
   slideMenu.classList.toggle("active");
   first.style = "filter: blur(4px)";
-  // second.style = "filter: blur(4px)";
-  // third.style = "filter: blur(4px)";
+  second.style = "filter: blur(4px)";
+  third.style = "filter: blur(4px)";
 });
 
 menuClose.addEventListener("click", function() {
   slideMenu.classList.toggle("active");
   first.style = "filter: blur(0)";
+  second.style = "filter: blur(0)";
+  third.style = "filter: blur(0)";
 });
 
 //?===============================
