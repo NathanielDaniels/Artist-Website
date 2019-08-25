@@ -10,7 +10,6 @@ body {
   cursor: default;
   height: 100vh;
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
   background: #0b1023;
 }
 
@@ -54,10 +53,6 @@ body {
 }
 
 .slide-menu.active {
-  right: -40px;
-}
-
-.slide-menu.new {
   right: -40px;
 }
 

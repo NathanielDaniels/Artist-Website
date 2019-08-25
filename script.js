@@ -34,18 +34,18 @@ TweenLite.from($pageMenu, 1, {
   ease: Power2.easeInOut
 });
 TweenLite.from($mainTitle, 1, {
-  delay: 1.7,
+  delay: 1.6,
   x: -300,
   opacity: 0,
   ease: Power2.easeInOut
 });
 TweenLite.from(menuButton, 1, {
-  delay: 1.7,
+  delay: 1.6,
   x: 300,
   opacity: 0,
   ease: Power2.easeInOut
 });
-TweenLite.from(first, 1, { delay: 0.3, opacity: 0, ease: Power2.easeInOut });
+TweenLite.from(first, 2, { delay: 0.3, opacity: 0, ease: Power2.easeInOut });
 
 //?===============================
 //* Menu Button Click
@@ -55,6 +55,7 @@ menuButton.addEventListener("click", function() {
   first.style = "filter: blur(4px)";
   second.style = "filter: blur(4px)";
   third.style = "filter: blur(4px)";
+  console.log("button clicked");
 });
 
 menuClose.addEventListener("click", function() {
