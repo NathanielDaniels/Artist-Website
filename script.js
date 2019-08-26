@@ -55,7 +55,6 @@ menuButton.addEventListener("click", function() {
   first.style = "filter: blur(4px)";
   second.style = "filter: blur(4px)";
   third.style = "filter: blur(4px)";
-  console.log("button clicked");
 });
 
 menuClose.addEventListener("click", function() {

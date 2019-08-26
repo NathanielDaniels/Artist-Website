@@ -10,8 +10,9 @@ body {
   cursor: default;
   height: 100vh;
   font-family: "Poppins", sans-serif;
-  // overflow: hidden;
+  overflow: hidden;
   background: #0b1023;
+  transition: all 0.4s ease-in-out;
   // scroll-behavior: smooth;
 }
 .bg {
@@ -51,9 +52,6 @@ body {
   &.active {
     right: -40px;
   }
-  // &.new {
-  //   right: -40px;
-  // }
   button {
     position: relative;
     top: 50px;

@@ -10,7 +10,10 @@ body {
   cursor: default;
   height: 100vh;
   font-family: "Poppins", sans-serif;
+  overflow: hidden;
   background: #0b1023;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 .bg {
