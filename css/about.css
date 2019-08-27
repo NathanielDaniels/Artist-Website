@@ -174,17 +174,17 @@ body {
 }
 
 .main-info .projects-left-side .projects-grid .project-img {
-  max-width: 180px !important;
-  min-width: 100px !important;
-  max-height: 180px !important;
-  min-height: 100px !important;
+  max-width: 180px;
+  min-width: 100px;
+  max-height: 180px;
+  min-height: 100px;
 }
 
 .main-info .projects-left-side .projects-grid .project-img img {
-  max-width: 180px !important;
-  min-width: 100px !important;
-  max-height: 180px !important;
-  min-height: 100px !important;
+  max-width: 180px;
+  min-width: 100px;
+  max-height: 180px;
+  min-height: 100px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
