@@ -8,4 +8,4 @@ RewriteRule ^custom html/about.html [NC, L]
 # L makes this the last rule that this specific condition will match
 
 # Rewrite for html/about.html
-RewriteRule ^([0-9a-zA-Z]+) about.html?u=$1 [NC, L]
+RewriteRule ^([0-9a-zA-Z]+) html/about.html?u=$1 [NC, L]
