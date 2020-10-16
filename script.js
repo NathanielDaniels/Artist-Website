@@ -19,6 +19,7 @@ const $modelRight = document.getElementById("modelRight");
 const $pageMenu = document.getElementById("pageMenu");
 const $userInfo = document.getElementById("userInfo");
 const $mainTitle = document.getElementById("title");
+const menuButton = document.getElementById("button");
 
 function animations() {
   TweenLite.from($modelLeft, 1.2, { y: 900, opacity: 0, ease: Power2.easeInOut });
@@ -51,7 +52,7 @@ function animations() {
     opacity: 0,
     ease: Power2.easeInOut
   });
-  TweenLite.from(first, 2, { delay: 0.3, opacity: 0, ease: Power2.easeInOut });
+  TweenLite.from(firstArtist, 2, { delay: 0.3, opacity: 0, ease: Power2.easeInOut });
 }
 animations();
 //?===============================
