@@ -304,9 +304,22 @@ body {
           justify-content: center;
 }
 
-.main-container .main-section .page-menu .page .button,
-.second-container .main-section .page-menu .page .button,
-.third-container .main-section .page-menu .page .button {
+.main-container .main-section .page-menu .page a,
+.second-container .main-section .page-menu .page a,
+.third-container .main-section .page-menu .page a {
+  text-decoration: none;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .main-section .page-menu .page a button,
+.second-container .main-section .page-menu .page a button,
+.third-container .main-section .page-menu .page a button {
   border: none;
   cursor: pointer;
   margin-left: 15px;
@@ -318,15 +331,15 @@ body {
   transition: background 0.3s ease-in-out;
 }
 
-.main-container .main-section .page-menu .page .button:hover,
-.second-container .main-section .page-menu .page .button:hover,
-.third-container .main-section .page-menu .page .button:hover {
+.main-container .main-section .page-menu .page a button:hover,
+.second-container .main-section .page-menu .page a button:hover,
+.third-container .main-section .page-menu .page a button:hover {
   background: #358faa;
 }
 
-.main-container .main-section .page-menu .page .button1,
-.second-container .main-section .page-menu .page .button1,
-.third-container .main-section .page-menu .page .button1 {
+.main-container .main-section .page-menu .page a .button1,
+.second-container .main-section .page-menu .page a .button1,
+.third-container .main-section .page-menu .page a .button1 {
   background: #666;
 }
 /*# sourceMappingURL=style.css.map */
