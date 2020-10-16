@@ -307,6 +307,7 @@ body {
 .main-container .main-section .page-menu .page .button,
 .second-container .main-section .page-menu .page .button,
 .third-container .main-section .page-menu .page .button {
+  border: none;
   cursor: pointer;
   margin-left: 15px;
   width: 20px;
