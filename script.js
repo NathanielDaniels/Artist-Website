@@ -34,11 +34,14 @@ let tltransition = new TimelineMax({paused:true})
   
 
 $button.forEach(button => buttonClick(button))
-
 function buttonClick(button) {
-  button.addEventListener('click', () => {
-    console.log("button clicked")
-    tltransition.play(0);
+  button.addEventListener('click', (e) => {
+    //! finding the clicked button
+    console.log("button clicked", e.path[0])
+    // tltransition.play(0);
+    // const scrollLocation = Math.floor(parseInt(window.scrollY));
+    // window.scrollTo(0, 100);
+    // window.scrollByPages(1);
 });
 }
 
